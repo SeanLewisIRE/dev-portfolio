@@ -24,6 +24,16 @@ const navSlide = () => {
   });
 }
 
+  // Accordion
+
+let collapseables = document.querySelectorAll('button.collapse');
+
+for(let i = 0; i < collapseables.length; i ++) {
+  collapseables[i].onclick = function(){
+    this.classList.toggle("active");
+    this.nextElementSibling.classList.toggle("show");
+  }
+};
 
 
   // Call Functions

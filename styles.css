@@ -169,6 +169,7 @@ body {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
+  text-align: center;
 }
 
 #skills h1 {
@@ -183,9 +184,31 @@ body {
   color: #b54149;
 }
 
+button.collapse {
+    background-color: red;
+    cursor: pointer;
+  }
 
+button.collapse:hover {
+  background-color: blue;
+}
 
+button.collapse.active {
+  background-color: black;
+}
 
+div.content {
+  background-color: pink;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: .5s;
+}
+
+div.content.show {
+  opacity: 1;
+  max-height: 200px;
+}
 
 
   /* Project Styles */
