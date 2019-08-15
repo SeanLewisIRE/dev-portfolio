@@ -170,6 +170,7 @@ body {
   justify-content: space-around;
   flex-direction: column;
   text-align: center;
+  padding-bottom: 5%;
 }
 
 #skills h1 {
@@ -184,30 +185,57 @@ body {
   color: #b54149;
 }
 
+.skills-box > button {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.125rem;
+}
+
 button.collapse {
-    background-color: red;
+    background-color: #F6F6F8;
+    color: #ad233a;
     cursor: pointer;
+    width: 150px;
+    margin: 0 auto;
+    border-radius: 6px;
+    border: black solid 1.5px;
+    padding: 1.25%;
+    font-weight: bold;
+    transition: all 0.5s ease 0s;
+    outline: none;
   }
 
 button.collapse:hover {
-  background-color: blue;
+  border-radius: 50px;
+  transition: all 0.5s ease 0s;
+  outline: none;
 }
 
 button.collapse.active {
-  background-color: black;
+  background-color: #ad233a ;
+  color: #F6F6F8;
+  outline: none;
+  border-radius: 50px;
 }
 
 div.content {
-  background-color: pink;
+  width: 150px;
+  margin: 0 auto;
+  background-color: #F6F6F8;
+  font-family: 'Lato', sans-serif;
   opacity: 0;
   max-height: 0;
   overflow: hidden;
   transition: .5s;
+  text-align: left;
+  border-radius: 6px;
+  line-height: 1.35em;
+  padding: 1%;
 }
 
 div.content.show {
   opacity: 1;
-  max-height: 200px;
+  max-height: 250px;
+  transition: all 1s ease 0s;
 }
 
 
@@ -216,14 +244,74 @@ div.content.show {
   #projects {
     text-align: center;
     background-color: #F6F6F8;
-    height: 50vh;
+    height: auto;
+  }
+
+  #projects h1 {
+    font-size: 2rem;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 0.1rem;
+    padding: 5% 5%;
+  }
+
+  #projects > .container {
+    width: 90%;
+  }
+
+  .projects-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .outter-project {
+    padding-bottom: 5%;
   }
 
   .project {
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
     border: solid #C60021 2px;
-    margin: 1% auto;
+    margin: 5px 5px;
+  }
+
+  .collapse.projects {
+    width: 200px;
+    background-color: #E3E3E3;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    padding: 2%;
+  }
+
+  .content.projects {
+    width: 200px;
+    background-color: #E3E3E3;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    padding: 1%;
+  }
+
+  .content p {
+    padding: 2%;
+  }
+
+  .content a {
+    display: inline-block;
+    text-align: center;
+    background-color: #00c684;
+    color: #000000;
+    cursor: pointer;
+    width: 45%;
+    height: auto;
+    border-radius: 6px;
+    border: black solid 1px;
+    padding: 1.25%;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 1.125rem;
   }
 
     /* Contact Styles */
