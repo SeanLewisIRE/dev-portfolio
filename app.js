@@ -26,7 +26,7 @@ const navSlide = () => {
 
   // Accordion
 
-let collapseables = document.querySelectorAll('button.collapse');
+const collapseables = document.querySelectorAll('button.collapse');
 
 for(let i = 0; i < collapseables.length; i ++) {
   collapseables[i].onclick = function(){
@@ -34,6 +34,19 @@ for(let i = 0; i < collapseables.length; i ++) {
     this.nextElementSibling.classList.toggle("show");
   }
 };
+
+
+  //Envelope
+
+  const unsent = document.querySelector('a.icon.unsent');
+  const sent = document.querySelector('a.icon.sent');
+
+  unsent.addEventListener('click', () => {
+    unsent.classList.add('fade-out');
+    sent.classList.remove('hidden');
+    sent.classList.add('fade-in');
+  })
+
 
 
   // Call Functions
