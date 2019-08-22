@@ -30,7 +30,6 @@ body {
 .navbar {
   min-height: 8vh;
   background-color: #E3E3E3;
-  align-content: center;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -45,9 +44,9 @@ body {
   align-items: center;
   position: absolute;
   right: 0px;
-  height: 42vh;
+  min-height: 42vh;
   top: 8vh;
-  width: 30%;
+  width: 27%;
   list-style: none;
   background-color: #E3E3E3;
   transform: translateX(100%);
@@ -55,13 +54,14 @@ body {
 }
 
 .nav-links li {
-    opacity: 0;
+  opacity: 0;
 }
 
 .nav-links a{
   text-decoration: none;
   color: #C60021;
   font-family: 'Roboto Slab', serif;
+  padding: 20%;
 }
 
 .burger {
@@ -145,7 +145,7 @@ body {
 }
 
 .about-bottom h1 {
-  font-size: 2rem;
+  font-size: 2.25rem;
   font-family: 'Roboto Slab', serif;
   letter-spacing: 0.1rem;
   padding-bottom: 7.5%;
@@ -154,6 +154,10 @@ body {
 .about-bottom p {
   font-family: 'Lato', sans-serif;
   padding-bottom: 10%;
+}
+
+.about-bottom p a {
+  text-decoration: none;
 }
 
   /* Skills Styles */
@@ -174,13 +178,14 @@ body {
 }
 
 #skills h1 {
-  font-size: 2rem;
+  font-size: 2.25rem;
   font-family: 'Roboto Slab', serif;
   letter-spacing: 0.1rem;
   padding: 5% 5% 0;
 }
 
 .skills-box > .fab {
+  font-size: 5em;
   padding: 5%;
   color: #b54149;
 }
@@ -310,7 +315,7 @@ div.content.show {
   outline: none;
   text-decoration: none;
   font-family: 'Lato', sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.125rem;
 }
 
@@ -332,6 +337,7 @@ div.content.show {
 
 .contact-box {
   width: 100%;
+  margin: 15% 0; 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -339,12 +345,25 @@ div.content.show {
 }
 
 .icon {
-  padding: 5%;
+  padding: 2.5%;
 }
 
 .icon.unsent{
   z-index: 10;
 }
+
+.fas {
+  font-size: 4em;
+}
+
+.far {
+  font-size: 4em;
+}
+
+.icon > .fab {
+  font-size: 4em;
+}
+
 
 .icon.sent {
   position: absolute;
@@ -387,7 +406,277 @@ a.icon:active {
 
     /* Media Queries */
 
+    /*Tablet*/
 @media all and (min-width: 767px) {
+
+ /* Nav Styles */
+
+.brand {
+  font-size: 1.75rem;
+  letter-spacing: 0.2rem;
+}
+
+.navbar {
+  border-bottom: solid #bd5163 2px;
+}
+
+.nav-links {
+  width: 30%;
+}
+
+
+.nav-links a{
+  font-size: 1.5rem;
+}
+
+.burger div{
+  width: 40px;
+  height: 4.5px;
+  margin: 6px;
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-6px, 7.5px);
+}
+.toggle .line3 {
+  transform: rotate(+45deg) translate(-7.5px, -9px);
+}
+
+/* About Section Styles */
+
+.author-image {
+  max-height: 300px;
+  max-width: 300px;
+}
+
+.about-top h1 {
+  font-size: 2rem;
+}
+
+.about-top h3 {
+  font-size: 1.5rem;
+}
+
+.about-bottom h1 {
+  font-size: 2rem;
+}
+
+.about-bottom p {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+/* Skills Styles */
+
+#skills h1 {
+  font-size: 2.25rem;
+  font-family: 'Roboto Slab', serif;
+}
+
+.skills-box > .fab {
+  font-size: 7em;
+}
+
+
+.skills-box > button {
+  font-size: 1.75rem;
+}
+
+button.collapse {
+  width: 200px;
+   border-radius: 10px;
+  }
+
+
+div.content {
+  width: 200px;
+}
+
+div.content.show {
+  max-height: 350px;
+}
+
+/* Project Styles */
+
+
+#projects h1 {
+  font-size: 2.25rem;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project {
+  height: 250px;
+  width: 250px;
+}
+
+.collapse.projects {
+  width: 250px;
+  font-size: 1.5rem;
+  padding: 2%;
+}
+
+.content.projects {
+  width: 250px;
+  font-size: 1.25rem;
+}
+
+.content p {
+  padding: 2%;
+}
+
+.content a {
+  font-size: 1.4rem;
+}
+
+  /* Contact Styles */
+
+#contact h1 {
+  font-size: 2.25rem;
+}
+
+.contact-box{
+  margin
+}
+
+.icon.sent {
+  position: absolute;
+  margin-left: -1%;
+  margin-top: -3%;
+}
+
+.fas {
+  font-size: 7em;
+}
+
+.far {
+  font-size: 7em;
+}
+
+.icon > .fab {
+  font-size: 7em;
+}
+
+}
+
+@media all and (min-width: 992px) {
+
+  /* Nav Styles */
+
+  .brand {
+  font-size: 1.75rem;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: solid #bd5163 2px;
+}
+
+.nav-links {
+  position: static;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: auto;
+  width: auto;
+  transform: translateX(0%);
+}
+
+.nav-links li {
+  opacity: 1;
+}
+
+.burger div{
+  display: none;
+}
+
+/* About Section Styles */
+
+#about {
+  display: flex;
+}
+
+.about-top {
+  width: 50%;
+  height: 92vh;
+  background-color: #F6F6F8;
+  border-right: solid #C60021 2px;
+  border-bottom: solid #C60021 2px;
+  text-align: right;
+}
+
+.about-bottom {
+  width: 50%;
+  height: 92vh;
+  text-align: left;
+  border-bottom: solid #C60021 2px;
+}
+
+.author-image {
+  max-height: 350px;
+  max-width: 350px;
+}
+
+.about-top h1 {
+  font-size: 2.25rem;
+}
+
+.about-top h3 {
+  font-size: 2rem;
+}
+
+.about-bottom h1 {
+  font-size: 2rem;
+  padding-bottom: 2.5%;
+}
+
+.about-bottom p {
+  font-size: 1.5em;
+}
+
+/* Skills Styles */
+
+#skills h1 {
+  font-size: 2.25rem;
+  font-family: 'Roboto Slab', serif;
+}
+
+.skills-box {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.skills-box > .fab {
+  font-size: 6em;
+}
+
+
+.skills-box > button {
+  font-size: 1.75rem;
+}
+
+button.collapse {
+  width: 200px;
+   border-radius: 10px;
+  }
+
+
+div.content {
+  width: 200px;
+}
+
+div.content.show {
+  max-height: 350px;
+}
 
 
 }
