@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -168,6 +172,13 @@ body {
   height: auto;
 }
 
+#skills h1 {
+  font-size: 2.25rem;
+  font-family: 'Roboto Slab', serif;
+  letter-spacing: 0.1rem;
+  padding: 5% 5% 0;
+}
+
 .skills-box {
   width: 100%;
   display: flex;
@@ -177,20 +188,18 @@ body {
   padding-bottom: 5%;
 }
 
-#skills h1 {
-  font-size: 2.25rem;
-  font-family: 'Roboto Slab', serif;
-  letter-spacing: 0.1rem;
-  padding: 5% 5% 0;
+.outer-skill {
+  display: flex;
+  flex-direction: column;
 }
 
-.skills-box > .fab {
-  font-size: 5em;
+.outer-skill > .fab {
   padding: 5%;
+  font-size: 5em;
   color: #b54149;
 }
 
-.skills-box > button {
+.outer-skill > button {
   font-family: 'Roboto Slab', serif;
   font-size: 1.125rem;
 }
@@ -270,7 +279,7 @@ div.content.show {
   justify-content: center;
 }
 
-.outter-project {
+.outer-project {
   padding-bottom: 5%;
 }
 
@@ -473,12 +482,12 @@ a.icon:active {
   font-family: 'Roboto Slab', serif;
 }
 
-.skills-box > .fab {
+
+.outer-skill > .fab {
   font-size: 7em;
 }
 
-
-.skills-box > button {
+.outer-skill > button {
   font-size: 1.75rem;
 }
 
@@ -490,6 +499,7 @@ button.collapse {
 
 div.content {
   width: 200px;
+  font-size: 1.25rem;
 }
 
 div.content.show {
@@ -501,13 +511,6 @@ div.content.show {
 
 #projects h1 {
   font-size: 2.25rem;
-}
-
-.projects-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
 }
 
 .project {
@@ -540,14 +543,10 @@ div.content.show {
   font-size: 2.25rem;
 }
 
-.contact-box{
-  margin
-}
-
 .icon.sent {
   position: absolute;
-  margin-left: -1%;
-  margin-top: -3%;
+  margin-left: -0.5%;
+  margin-top: -1%;
 }
 
 .fas {
@@ -572,22 +571,15 @@ div.content.show {
   font-size: 1.75rem;
 }
 
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: solid #bd5163 2px;
-}
-
 .nav-links {
   position: static;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
   min-height: auto;
-  width: auto;
+  min-width: 40%;
   transform: translateX(0%);
+  margin-left: 40%;
 }
 
 .nav-links li {
@@ -644,39 +636,108 @@ div.content.show {
 
 /* Skills Styles */
 
+#skills {
+  height: auto;
+  min-height: 50vh;
+}
+
 #skills h1 {
   font-size: 2.25rem;
   font-family: 'Roboto Slab', serif;
+  padding: 5% 5%;
 }
 
 .skills-box {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.outer-skill > .fab {
+  font-size: 8em;
+}
+
+.outer-skill > button {
+  font-size: 1.5rem;
 }
 
 .skills-box > .fab {
   font-size: 6em;
 }
 
-
 .skills-box > button {
   font-size: 1.75rem;
 }
 
 button.collapse {
-  width: 200px;
-   border-radius: 10px;
+  width: 175px;
   }
 
 
 div.content {
-  width: 200px;
+  width: 175px;
+  font-size: 1.125rem;
 }
 
-div.content.show {
-  max-height: 350px;
+/* Project Styles */
+
+
+.projects-container {
+  justify-content: space-around;
 }
 
+.project {
+  height: 275px;
+  width: 275px;
+}
+
+  /* Contact Styles */
+
+  #contact h1 {
+  padding: 2.5% 5%;
+}
+
+.contact-box {
+  margin: 1% 0; 
+  justify-content: space-around;
+}
+
+.icon.sent {
+  position: absolute;
+  margin-left: -29.7%;
+  margin-top: -0.75%;
+}
+
+.fas {
+  font-size: 7em;
+}
+
+.far {
+  font-size: 7em;
+}
+
+.icon > .fab {
+  font-size: 7em;
+}
+
+}
+
+@media all and (min-width: 1600px) {
+
+  /* Project Styles */
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.projects-container {
+  justify-content: center;
+}
+
+.outer-project {
+  padding: 0 5% 15%;
+}
 
 }
