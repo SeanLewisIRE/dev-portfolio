@@ -36,17 +36,6 @@ for(let i = 0; i < collapseables.length; i ++) {
 };
 
 
-  //Envelope
-
-  const unsent = document.querySelector('a.icon.unsent');
-  const sent = document.querySelector('a.icon.sent');
-
-  unsent.addEventListener('click', () => {
-    unsent.classList.add('fade-out');
-    sent.classList.remove('hidden');
-    sent.classList.add('fade-in');
-  })
-
 
 
   // Call Functions
