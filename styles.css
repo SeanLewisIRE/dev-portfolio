@@ -19,21 +19,17 @@ body {
   margin: 0 auto;
 }
 
-.pop {
-  color: #18C7B4;
-}
-
 /* Nav Styles */
 
 .brand {
+  font-family: 'Roboto Slab', serif;  
   font-size: 1.25rem;
-  font-family: Charter;
-  letter-spacing: 0.2px;
+  letter-spacing: 1px;
   color: #18C7B4;
 }
 
 .navbar {
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   min-height: 8vh;
@@ -57,8 +53,8 @@ body {
   width: 100%;
   list-style: none;
   transform: translateX(100%);
-  transition: transform 0.6s ease-out;
   opacity: 0;
+  transition: all 1s ease-out;
 }
 
 .nav-links li {
@@ -125,12 +121,12 @@ body {
 
 #about {
   text-align: left;
-  height: 100vh;
+  height: 94vh;
 }
 
 .author-image {
-  max-height: 100px;
-  max-width: 100px;
+  max-height: 75px;
+  max-width: 75px;
   margin: 15px 0;
   border-radius: 25%;
   filter: grayscale(90%);
@@ -140,15 +136,28 @@ body {
   position: absolute;
   top: auto;
   bottom: 0;
-  padding: 0 40px 40px 0;
+  padding: 40px 0;
+  width: 80%;
 }
 
 .main p {
   color: #000000;	
-  font-family: Charter;	
-  font-size: 18px;	
+  font-family: 'Crimson Pro', serif;
+  font-size: 17px;	
   letter-spacing: 0.2px;	
-  line-height: 24px;
+  line-height: 20px;
+  margin-bottom: 2%;
+  width: 65%;
+}
+
+.main p a {
+  text-decoration: none;
+  color: #18C7B4;
+}
+
+.main p a:hover{
+  color: #000;
+  text-decoration: underline;
 }
 
   /* Skills Styles */
@@ -159,9 +168,9 @@ body {
 }
 
 #skills h1 {
-  font-size: 2.25rem;
+  font-size: 1.75rem;
   font-family: 'Roboto Slab', serif;
-  letter-spacing: 0.1rem;
+  letter-spacing: 1px;
   padding: 5% 0;
 }
 
@@ -172,11 +181,22 @@ body {
 }
 
 .about-skills {
+  height: 30vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: left;
+  font-family: 'Crimson Pro', serif;
+  letter-spacing: 0.2px;
 }
 
 .skill {
  padding: 10px;
+}
+
+.skill h3 {
+  font-family: 'Roboto Slab', serif;
+  letter-spacing: 1px;
 }
 
 .skill-icon {
@@ -190,14 +210,6 @@ body {
   height: auto;
 }
 
-#projects h1 {
-  font-size: 2rem;
-  font-family: 'Roboto Slab', serif;
-  letter-spacing: 0.1rem;
-  padding: 5% 5%;
-  /* margin-left: 6%; */
-}
-
 .project {
   width: 100%;
   margin: 5% auto;
@@ -207,18 +219,17 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   color: #fff;
 }
 
 .project.ballytrent {
-  background-image: url("images/ballytrent_background.PNG");
+  background:linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("images/ballytrent_background.png") center no-repeat;
+  background-size:cover;
 }
 
 .project.panic {
-  background-image: url("images/panic_background.jpg");
+  background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("images/panic_background.jpg") center no-repeat;
+  background-size:cover;
 }
 
 .project:after {
@@ -231,15 +242,20 @@ body {
   position: absolute;
   width: 80%;
   height: auto;
+  font-family: Charter;
+  letter-spacing: 0.2px;
 }
 
 .project-content h4 {
-  font-size: 1.5rem;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
 }
 
 .project-content p {
   padding: 2% 0; 
   margin-bottom: 15px;
+  font-family: 'Crimson Pro', serif;
 }
 
 .project-button {
@@ -253,6 +269,11 @@ body {
   border-radius: 5px;
   text-align: center;
   width: 150px;
+  font-family: 'Crimson Pro', serif;
+}
+
+.project-button :hover {
+  cursor: pointer;
 }
 
 .credit {
@@ -266,22 +287,22 @@ body {
   /* Contact Styles */
 
 #contact h1 {
-  font-size: 2.25rem;
+  font-size: 1.75rem;
   font-family: 'Roboto Slab', serif;
-  letter-spacing: 0.1rem;
+  letter-spacing: 1px;
   padding: 5% 0;
 }
 
 .contact-box {
-  height: 50vh;
   text-align: left;
   margin: 0 auto;
-  padding: 20% 0;
+  padding: 15% 0;
 
 }
 
 .contact-box p {
-
+  font-family: 'Crimson Pro', serif;
+  letter-spacing: 0.2px;
 }
 
 .icons {
@@ -296,23 +317,21 @@ body {
   height: 45px;
 }
 
+.contact-icon:hover {
+  cursor: pointer;
+}
+
 
     /* Media Queries */
+    /****Tablet (site is mobile first) ****/
 
-    /*Tablet*/
 @media all and (min-width: 767px) {
 
  /* Nav Styles */
 
 .brand {
   font-size: 1.75rem;
-  letter-spacing: 0.2rem;
 }
-
-.nav-links {
-  width: 30%;
-}
-
 
 .nav-links a{
   font-size: 1.5rem;
@@ -333,266 +352,274 @@ body {
 
 /* About Section Styles */
 
-.about-top h1 {
-  font-size: 2rem;
-}
-
-.about-top h3 {
-  font-size: 1.5rem;
-}
-
-.about-bottom h1 {
-  font-size: 2rem;
-}
-
-.about-bottom p {
-  font-size: 1.5em;
-  font-weight: 500;
+.main p {
+  font-size: 20px;	
+  letter-spacing: 0.2px;	
+  line-height: 22px;
 }
 
 /* Skills Styles */
 
-#skills h1 {
-  font-size: 2.25rem;
-  font-family: 'Roboto Slab', serif;
+.about-skills {
+  text-align: left;
+  font-family: Charter;
+  letter-spacing: 0.2px;
+  font-size: 20px;
 }
 
-
-.outer-skill > .fab {
-  font-size: 7em;
+.skill {
+ padding: 5%;
 }
 
-.outer-skill > button {
-  font-size: 1.75rem;
-}
-
-button.collapse {
-  width: 200px;
-   border-radius: 10px;
-  }
-
-
-div.content {
-  width: 200px;
-  font-size: 1.25rem;
-}
-
-div.content.show {
-  max-height: 350px;
+.skill-icon {
+  height: 150px;
+  width: 150px;
 }
 
 /* Project Styles */
 
-
-#projects h1 {
-  font-size: 2.25rem;
+.project-content h4 {
+  font-size: 1.75rem;
 }
 
-.project {
-  height: 250px;
-  width: 250px;
+.project-content p {
+  font-size: 18px;
+  width: 75%;
 }
 
-.collapse.projects {
-  width: 250px;
-  font-size: 1.5rem;
-  padding: 2%;
-}
-
-.content.projects {
-  width: 250px;
-  font-size: 1.25rem;
-}
-
-.content p {
-  padding: 2%;
-}
-
-.content a {
-  font-size: 1.4rem;
+.project-button {
+  display: flex;
+  flex-direction: column;
+  background: #18C7B4;
+  color: #fff;
+  padding: 3%;
+  margin: 4% 0;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  width: 150px;
 }
 
   /* Contact Styles */
-
-#contact h1 {
-  font-size: 2.25rem;
-}
-
-.icon.sent {
-  position: absolute;
-  margin-left: -0.5%;
-  margin-top: -1%;
-}
-
-.fas {
-  font-size: 7em;
-}
-
-.far {
-  font-size: 7em;
-}
-
-.icon > .fab {
-  font-size: 7em;
-}
+  
+  .contact-box p {
+    font-size: 20px;
+  }
+  
+  .contact-icon {
+    width: 55px;
+    height: 55px;
+  }
 
 }
+
+/**** Large Screen ****/
 
 @media all and (min-width: 992px) {
 
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+
   /* Nav Styles */
 
+  .navbar {
+    width: 95%;
+    min-height: 8vh;
+  }
+
   .brand {
-  font-size: 1.75rem;
-}
+    font-size: 1.5rem;
+    flex: 3;
+  }
+  
+  .nav-links {
+    position: static;
+    min-height: 8vh;
+    flex-direction: row;
+    flex: 1;
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  
+  .nav-links li {
+    opacity: 1;
+  }
 
-.nav-links {
-  position: static;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  min-height: auto;
-  min-width: 40%;
-  transform: translateX(0%);
-  margin-left: 40%;
-}
+  .nav-links a {
+    font-size: 16px;
+  }
+  
+  .burger {
+    display: none;
+  } 
 
-.nav-links li {
-  opacity: 1;
-}
+  /* About Styles */
 
-.burger div{
-  display: none;
-}
-
-/* About Section Styles */
-
-#about {
-  display: flex;
-}
-
-
-.about-top h1 {
-  font-size: 2.25rem;
-}
-
-.about-top h3 {
-  font-size: 2rem;
-}
-
-.about-bottom h1 {
-  font-size: 2rem;
-  padding-bottom: 2.5%;
-}
-
-.about-bottom p {
-  font-size: 1.5em;
-}
+  .author-image {
+    max-height: 75px;
+    max-width: 75px;
+  }
+  
+  .main p {
+    font-size: 22px;	
+    letter-spacing: 0.2px;	
+    line-height: 24px;
+    width: 50%;
+  }
+    
 
 /* Skills Styles */
 
-#skills {
+.grey {
   height: auto;
-  min-height: 50vh;
+}
+
+#skills {
+  text-align: center;
+  height: auto;
 }
 
 #skills h1 {
-  font-size: 2.25rem;
-  font-family: 'Roboto Slab', serif;
-  padding: 5% 5%;
-}
-
-.skills-box {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.outer-skill > .fab {
-  font-size: 8em;
-}
-
-.outer-skill > button {
   font-size: 1.5rem;
 }
 
-.skills-box > .fab {
-  font-size: 6em;
+.about-skills {
+
+  text-align: left;
+  letter-spacing: 0.2px;
+  width: 50%;
+  margin: 0 auto;
+  font-size: 20px;
 }
 
-.skills-box > button {
-  font-size: 1.75rem;
+.icon-container {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  margin: 0 auto;
+  padding-bottom: 5%;
 }
 
-button.collapse {
-  width: 175px;
-  }
+.skill h3 {
+  font-size: 18px;
+}
 
-
-div.content {
-  width: 175px;
-  font-size: 1.125rem;
+.skill-icon {
+  height: 75px;
+  width: 75px;
 }
 
 /* Project Styles */
 
+#projects {
+  height: auto;
+}
 
 .projects-container {
-  justify-content: space-around;
+  display: flex;
+  justify-content: space-between;
 }
 
 .project {
-  height: 275px;
-  width: 275px;
+  width: 42.5%;
+  padding: 0 2.5%;
 }
 
   /* Contact Styles */
-
+  
   #contact h1 {
-  padding: 2.5% 5%;
+    font-size: 1.75rem;
+    padding: 5% 0;
+  }
+  
+  .container .contacts {
+    width: 50%;
+  }
+  
+  .contact-box p {
+    font-family: Charter;
+    letter-spacing: 0.2px;
+  }
+  
+  .icons {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .contact-icon {
+    width: 45px;
+    height: 45px;
+  }
+
 }
 
-.contact-box {
-  margin: 1% 0; 
-  justify-content: space-around;
-}
-
-.icon.sent {
-  position: absolute;
-  margin-left: -29.7%;
-  margin-top: -0.75%;
-}
-
-.fas {
-  font-size: 7em;
-}
-
-.far {
-  font-size: 7em;
-}
-
-.icon > .fab {
-  font-size: 7em;
-}
-
-}
+/**** XL-Screens ****/
 
 @media all and (min-width: 1600px) {
 
-  /* Project Styles */
+  
+  .container {
+    width: 90%;
+  }
 
-.container {
-  width: 70%;
-  margin: 0 auto;
+  /* Nav Styles */
+
+  .navbar {
+    width: 90%;
+  }
+  
+  /* About Styles */
+ 
+  .main p {
+    width: 40%;
+  }
+    
+
+/* Skills Styles */
+
+.about-skills {
+  width: 40%;
 }
 
-.projects-container {
-  justify-content: center;
+.icon-container {
+  width: 50%;
 }
 
-.outer-project {
-  padding: 0 5% 15%;
+.skill-icon {
+  height: 85px;
+  width: 85px;
 }
+
+/* Project Styles */
+
+#projects {
+  height: auto;
+}
+
+.project {
+  width: 37.5%;
+  padding: 0 2.5%;
+}
+
+  /* Contact Styles */
+    
+  .container .contacts {
+    width: 35%;
+  }
+  
+  .contact-box p {
+    font-family: Charter;
+    letter-spacing: 0.2px;
+  }
+  
+  .contact-icon {
+    width: 50px;
+    height: 50px;
+  }
+
 
 }

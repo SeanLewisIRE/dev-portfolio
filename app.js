@@ -21,9 +21,8 @@ const navSlide = () => {
     burger.classList.toggle('toggle');
   });
 
-  //Close munu on click
+  //Close munu on link click
   const navLink = document.querySelectorAll(".nav-link");
-
   navLink.forEach((link) => {
     link.addEventListener('click', () => {
     nav.classList.remove('nav-active');
