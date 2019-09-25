@@ -387,19 +387,6 @@ body {
   width: 75%;
 }
 
-.project-button {
-  display: flex;
-  flex-direction: column;
-  background: #18C7B4;
-  color: #fff;
-  padding: 3%;
-  margin: 4% 0;
-  text-decoration: none;
-  border-radius: 5px;
-  text-align: center;
-  width: 150px;
-}
-
   /* Contact Styles */
   
   .contact-box p {
@@ -603,6 +590,11 @@ body {
 .project {
   width: 37.5%;
   padding: 0 2.5%;
+}
+
+.project-button {
+  width: 175px;
+  font-size: 18px;
 }
 
   /* Contact Styles */

@@ -21,7 +21,7 @@ const navSlide = () => {
     burger.classList.toggle('toggle');
   });
 
-  //Close munu on link click
+  //Close menu on link click
   const navLink = document.querySelectorAll(".nav-link");
   navLink.forEach((link) => {
     link.addEventListener('click', () => {
@@ -33,21 +33,6 @@ const navSlide = () => {
     });
   });
 };
-
-
-
-  // Accordion
-
-const collapseables = document.querySelectorAll('button.collapse');
-
-for(let i = 0; i < collapseables.length; i ++) {
-  collapseables[i].onclick = function(){
-    this.classList.toggle("active");
-    this.nextElementSibling.classList.toggle("show");
-  }
-};
-
-
 
 
   // Call Functions
