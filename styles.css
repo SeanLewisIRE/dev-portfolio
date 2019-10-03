@@ -143,11 +143,11 @@ body {
 .main p {
   color: #000000;	
   font-family: 'Crimson Pro', serif;
-  font-size: 17px;	
+  font-size: 20px;	
   letter-spacing: 0.2px;	
   line-height: 20px;
   margin-bottom: 2%;
-  width: 65%;
+  width: 70%;
 }
 
 .main p a {
@@ -172,6 +172,7 @@ body {
   font-family: 'Roboto Slab', serif;
   letter-spacing: 1px;
   padding: 5% 0;
+  box-sizing: border-box;
 }
 
 .container.grey {
@@ -181,13 +182,18 @@ body {
 }
 
 .about-skills {
-  height: 30vh; 
+  height: auto; 
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: left;
   font-family: 'Crimson Pro', serif;
   letter-spacing: 0.2px;
+}
+
+.about-skills p {
+  font-size: 18px;
+  padding-bottom: 5%;
 }
 
 .skill {
@@ -303,6 +309,7 @@ body {
 .contact-box p {
   font-family: 'Crimson Pro', serif;
   letter-spacing: 0.2px;
+  font-size: 18px;
 }
 
 .icons {
@@ -367,6 +374,10 @@ body {
   font-size: 20px;
 }
 
+.about-skills p {
+  font-size: 20px;
+}
+
 .skill {
  padding: 5%;
 }
@@ -403,7 +414,7 @@ body {
 /**** Large Screen ****/
 
 @media all and (min-width: 992px) {
-
+  
   .container {
     width: 95%;
     margin: 0 auto;
@@ -450,7 +461,7 @@ body {
   }
   
   .main p {
-    font-size: 22px;	
+    font-size: 24px;	
     letter-spacing: 0.2px;	
     line-height: 24px;
     width: 50%;
@@ -473,7 +484,6 @@ body {
 }
 
 .about-skills {
-
   text-align: left;
   letter-spacing: 0.2px;
   width: 50%;
@@ -538,8 +548,8 @@ body {
   }
   
   .contact-icon {
-    width: 45px;
-    height: 45px;
+    width: 60px;
+    height: 60px;
   }
 
 }
@@ -570,6 +580,10 @@ body {
 
 .about-skills {
   width: 40%;
+}
+
+.about-skills p {
+  font-size: 22px;
 }
 
 .icon-container {
@@ -606,12 +620,7 @@ body {
   .contact-box p {
     font-family: Charter;
     letter-spacing: 0.2px;
+    font-size: 22px;
   }
-  
-  .contact-icon {
-    width: 50px;
-    height: 50px;
-  }
-
 
 }
