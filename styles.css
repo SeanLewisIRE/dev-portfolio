@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  overflow-x: hidden;
+
 }
 
 .container {
@@ -29,24 +29,24 @@ body {
 }
 
 .navbar {
-  position: sticky;
   top: 0;
-  width: 100%;
+  max-width: 100%;
   min-height: 8vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
   margin: auto;
-  z-index: 100;
+  z-index: 1;
   background: #fff;
 }
 
+ 
 .nav-links {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  position: absolute;
+  position: fixed;
   right: 0px;
   min-height: 92vh;
   top: 8vh;
@@ -55,6 +55,16 @@ body {
   transform: translateX(100%);
   opacity: 0;
   transition: all 1s ease-out;
+}
+
+
+.nav-active {
+  top: 8vh;
+  transform: translateX(0%);
+  transition: transform 0.6s ease-in;
+  background: #fff;
+  opacity: 1;
+  z-index: 100;
 }
 
 .nav-links li {
@@ -86,13 +96,6 @@ body {
   transition: all 0.3s ease;
 }
 
-.nav-active {
-  transform: translateX(0%);
-  transition: transform 0.6s ease-in;
-  background: #fff;
-  z-index: 10;
-  opacity: 1;
-}
 
 @keyframes navLinkFade {
   from {
@@ -433,6 +436,7 @@ body {
   /* Nav Styles */
 
   .navbar {
+    position: sticky;
     width: 95%;
     min-height: 8vh;
   }
