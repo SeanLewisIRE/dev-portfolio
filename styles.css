@@ -196,6 +196,16 @@ body {
   padding-bottom: 5%;
 }
 
+.about-skills p a {
+  text-decoration: none;
+  color: #18C7B4;
+}
+
+.about-skills p a:hover{
+  color: #000;
+  text-decoration: underline;
+}
+
 .skill {
  padding: 10px;
 }
