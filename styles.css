@@ -29,6 +29,8 @@ body {
 }
 
 .navbar {
+  position: sticky;
+  top: 0;
   max-width: 100%;
   min-height: 8vh;
   display: flex;
@@ -435,7 +437,6 @@ body {
   /* Nav Styles */
 
   .navbar {
-    position: sticky;
     width: 95%;
     min-height: 8vh;
   }
