@@ -29,7 +29,6 @@ body {
 }
 
 .navbar {
-  top: 0;
   max-width: 100%;
   min-height: 8vh;
   display: flex;
@@ -150,7 +149,7 @@ body {
   letter-spacing: 0.2px;	
   line-height: 20px;
   margin-bottom: 2%;
-  width: 70%;
+  width: 100%;
 }
 
 .main p a {
