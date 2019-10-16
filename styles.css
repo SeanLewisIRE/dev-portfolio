@@ -81,7 +81,7 @@ body {
 
 .nav-links a:hover{
   color: #18C7B4;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .burger {
@@ -160,8 +160,8 @@ body {
 }
 
 .main p a:hover{
-  color: #000;
-  text-decoration: underline;
+  color: #c73e18;
+  text-decoration: none;
 }
 
   /* Skills Styles */
@@ -331,6 +331,16 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+.contact-box p a {
+  text-decoration: none;
+  color: #18C7B4;
+}
+
+.contact-box p a:hover{
+  color: #c73e18;
+  text-decoration: none;
 }
 
 .contact-icon {
