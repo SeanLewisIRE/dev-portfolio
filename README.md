@@ -20,5 +20,8 @@ HTML, CSS, Javascript
 Repository uploaded 24 Jul, 2019.
 
 <h2>Future Plans</h2>
-Future projects will be added to the appropriate section. 
-Minor design changes to mobile menu, links and buttons to increase interactivity with user. 
+<p>Future projects will be added to the appropriate section. 
+Minor design changes to mobile menu, links and buttons to increase interactivity with user. </p>
+<br>
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/001cf2cc-f644-4660-9068-465c51c3d6c3/deploy-status)](https://app.netlify.com/sites/hardcore-lovelace-082e86/deploys)
