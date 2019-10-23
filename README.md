@@ -2,11 +2,10 @@
 Personal portfolio site for Sean Lewis
 
 <h2>Summary</h2>
-This site is to allow users to view the progress of the author as a developer, view what languages and technologies they have used, 
-projects they have worked on and get in contact with the autor if they wish. 
+<p>This site is to allow users to view the progress of the author as a developer, view what languages and technologies they have used, 
+projects they have worked on and get in contact with the autor if they wish. </p>
 
-Currently features the following functions:
-
+Current Features:
 <ul>
   <li>Mobile-first layout</li>
   <li>Responsive design</li>
