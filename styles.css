@@ -206,8 +206,8 @@ body {
 }
 
 .about-skills p a:hover{
-  color: #000;
-  text-decoration: underline;
+  color: #c73e18;
+  text-decoration: none;
 }
 
 .skill {
@@ -249,6 +249,11 @@ body {
 
 .project.panic {
   background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("images/panic_background.jpg") center no-repeat;
+  background-size:cover;
+}
+
+.project.weather {
+  background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3) ), url("images/weather_background.jpg") center no-repeat;
   background-size:cover;
 }
 
@@ -513,6 +518,11 @@ body {
   width: 50%;
   margin: 0 auto;
   font-size: 20px;
+  padding-top: 2.5%;
+}
+
+.container.grey {
+  margin-bottom: 0;
 }
 
 .icon-container {
@@ -520,7 +530,7 @@ body {
   justify-content: space-around;
   width: 60%;
   margin: 0 auto;
-  padding-bottom: 5%;
+  padding-bottom: 4%;
 }
 
 .skill h3 {
@@ -541,11 +551,15 @@ body {
 .projects-container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .project {
   width: 42.5%;
   padding: 0 2.5%;
+  margin: 2.5% auto;
+  max-height: 700px;
+  max-width: 700px;
 }
 
   /* Contact Styles */
@@ -557,6 +571,10 @@ body {
   
   .container .contacts {
     width: 50%;
+  }
+
+  #contact > .grey {
+    margin-bottom: 2.5%;
   }
   
   .contact-box p {
