@@ -10,10 +10,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-
-}
-
 .container {
   width: 80%;
   margin: 0 auto;
@@ -256,6 +252,21 @@ body {
   background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3) ), url("images/weather_background.jpg") center no-repeat;
   background-size:cover;
 }
+
+.project.recipe {
+  background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3) ), url("images/recipe_background.jpg") center no-repeat;
+  background-size:cover;
+}
+
+.photo-credit {
+  text-decoration: none;
+  color: #18C7B4;
+}
+
+.photo-credit:hover {
+  color: #c73e18;
+  text-decoration: none;
+} 
 
 .project:after {
   content: "";
