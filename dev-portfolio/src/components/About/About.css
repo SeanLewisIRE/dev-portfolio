@@ -1,0 +1,92 @@
+
+#about {
+  text-align: left;
+  height: 94vh;
+}
+
+.author-image {
+  max-height: 75px;
+  max-width: 75px;
+  margin: 15px 0;
+  border-radius: 25%;
+  filter: grayscale(90%);
+}
+
+.main {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  padding: 40px 0;
+  width: 80%;
+}
+
+.main p {
+  color: #000000;	
+  font-family: 'Crimson Pro', serif;
+  font-size: 20px;	
+  letter-spacing: 0.2px;	
+  line-height: 20px;
+  margin-bottom: 2%;
+  width: 100%;
+}
+
+.main p a {
+  text-decoration: none;
+  color: #18C7B4;
+}
+
+.main p a:hover{
+  color: #c73e18;
+  text-decoration: none;
+}
+
+@media all and (min-width: 767px) {
+    .main p {
+    font-size: 20px;	
+    letter-spacing: 0.2px;	
+    line-height: 22px;
+    }
+
+    /* Skills Styles */
+
+    .about-skills {
+    text-align: left;
+    font-family: Charter;
+    letter-spacing: 0.2px;
+    font-size: 20px;
+    }
+
+    .about-skills p {
+    font-size: 20px;
+    }
+
+    .skill {
+    padding: 5%;
+    }
+
+    .skill-icon {
+    height: 150px;
+    width: 150px;
+    }
+}
+
+@media all and (min-width: 992px) {
+      .author-image {
+        max-height: 75px;
+        max-width: 75px;
+    }
+
+    .main p {
+        font-size: 24px;	
+        letter-spacing: 0.2px;	
+        line-height: 24px;
+        width: 50%;
+    }
+    
+}
+
+@media all and (min-width: 1600px) {
+      .main p {
+        width: 40%;
+    }
+}
